@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	double x, y, a, e, result;
+	setlocale(LC_ALL, "ukr");
+	// Введення значення x з клавіатури
+	cout << "Введіть значення x: ";
+	cin >> x;
+	cout << "Введіть значення y: ";
+	cin >> y;
+	cout << "Введіть значення a: ";
+	cin >> a;
+	cout << "Введіть значення e: ";
+	cin >> e;
+	// Обчислення виразу
+	result = ((pow(y, 2) - x) / (pow(x, 2) - y + 1)) - ((pow(a, 2) - x + 2) / (pow(x, 2) - pow(e, x) - 2));
+	// Виведення результату
+	cout << "Результат виразу: " << result << endl;
+}
